@@ -1,8 +1,7 @@
 import React from 'react';
 
 const User = (props) => {
-    // console.log(props);
-    const { id, first_name, last_name, email, avatar } = props.user;
+    const { first_name, last_name, email, avatar } = props.user;
     return (
         <div className="col-6 mt-3">
             <div className="card" style={{width: "18rem"}}>

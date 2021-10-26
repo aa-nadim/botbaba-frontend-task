@@ -22,7 +22,6 @@ const DeleteUser = () => {
                 setUser(null);
             });
     }
-    console.log(user);
     return (
         <div className="row  mt-2">
             <div className="col-12">

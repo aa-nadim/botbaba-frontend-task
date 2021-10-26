@@ -8,7 +8,7 @@ const URL = "https://reqres.in/api/users/";
 const CreateUser = () => {
     const [userData, setUserData] = useState([]);
     const [user, setUser] = useState(null);
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
         setUserData(data);
@@ -20,8 +20,6 @@ const CreateUser = () => {
                 setUser(response.data);
             });
     }
-    // console.log(user);
-    // if (!post) return "No post!"
     return (
         <div className="row  mt-4">
             <div className="col-4">
