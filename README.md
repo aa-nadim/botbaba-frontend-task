@@ -1,7 +1,7 @@
 # botbaba-frontend-task
 
 ## Live Site -> 
-`https://6177a7ab14f12464401b8a70--silly-kare-614b77.netlify.app/`
+https://6177a7ab14f12464401b8a70--silly-kare-614b77.netlify.app/
 
 ## Technologies: 
 
