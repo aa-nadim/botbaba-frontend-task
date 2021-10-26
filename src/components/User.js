@@ -4,7 +4,7 @@ const User = (props) => {
     // console.log(props);
     const { id, first_name, last_name, email, avatar } = props.user;
     return (
-        <div className="col-4 mt-3">
+        <div className="col-6 mt-3">
             <div className="card" style={{width: "18rem"}}>
                 <img src={avatar} className="card-img-top" alt="..."/>
                 <div className ="card-body">

@@ -21,26 +21,35 @@ const Users = () => {
 
     return (
         <div className="row">
-            <div className="container col-8">
-                <h1>Read ALL Users</h1>
+            <div className="container col-5">
+                <div className="bg-secondary">
+                    <h1 className="text-light">Read ALL Users</h1>
+                </div>
                 <div className="row">
                     {users.length && users.map(user => <User user={user}></User>)}
                 </div>
             </div>
-            <div className="col-4">
-                <div className="container">
-                    <h1>Create a User</h1>
+            <div className="col-7">
+                <div className="">
+                    <div className="bg-secondary">
+                        <h1 className="text-light">Create a User</h1>
+                    </div>
                     <CreateUser />
                 </div>
-                <div className="container">
-                    <h1>Update a User</h1>
+                <div className="mt-5">
+                    <div className="bg-secondary">
+                        <h1 className="text-light">Update a User</h1>
+                    </div>
+
                     <UpdateUser />
                 </div>
-                <div className="container">
-                    <h1>Delete a User</h1>
+                <div className="my-5">
+                    <div className="bg-secondary">
+                        <h1 className="text-light">Delete a User</h1>
+                    </div>
                     <DeleteUser />
                 </div>
-                
+
             </div>
         </div>
     );

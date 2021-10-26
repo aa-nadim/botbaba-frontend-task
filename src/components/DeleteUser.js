@@ -18,13 +18,14 @@ const DeleteUser = () => {
     function deleteUser() {
         axios.put(`${URL}/2`)
             .then((response) => {
-                alert("Post deleted!");
+                alert("User deleted!");
                 setUser(null);
             });
     }
     console.log(user);
     return (
-        <div>
+        <div className="row  mt-2">
+            <div className="col-12">
             {
                 user && <>
                     <div className="card" style={{ width: "18rem" }}>
@@ -36,7 +37,11 @@ const DeleteUser = () => {
                     </div>
                 </>
             }
-            <button onClick={deleteUser}>Delete User</button>
+            <div className="col-12 mt-2">
+                <p className="text-warning">To delete user. Please click the "Delete User" button....</p>
+                <button className="col-12 bg-danger text-light" onClick={deleteUser}>Delete User</button>
+            </div>
+        </div>
         </div>
     );
 };
